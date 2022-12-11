@@ -17,11 +17,13 @@ public class Pozele {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.get("http://testfasttrackit.info/selenium-test/");
+
     }
 
     @Test
     //poza 1
     public void addToCart() {
+
 
         driver.findElement(By.cssSelector("#nav > ol > li.level0.nav-5.parent > a")).click();
         driver.findElement(By.cssSelector("body > div > div.page > div.main-container.col3-layout > div > div.col-wrapper > div.col-main > div.category-products > ul > li > div > h2 > a")).click();

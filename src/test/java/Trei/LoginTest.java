@@ -19,8 +19,8 @@ public class LoginTest {
 
     @Test
     public void loginWithValidData(){
-        driver.findElement(By.cssSelector("div.account-cart-wrapper span.label")).click();
-        driver.findElement(By.cssSelector("#header-account li.last")).click();
+        driver.findElement(By.cssSelector(".skip-account .label")).click();
+        driver.findElement(By.cssSelector("[title='Log In']")).click();
         driver.findElement(By.id("email")).sendKeys("marilena_c2001@yahoo.com");
         driver.findElement(By.id("pass")).sendKeys("Emilia123");
         driver.findElement(By.id("send2")).click();
@@ -34,7 +34,7 @@ public class LoginTest {
 //        Assert.assertTrue(myAccount.isDisplayed());
     }
 
-    @Ignore
+    @After
     public void close() {
         driver.close();
     }

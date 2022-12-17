@@ -1,22 +1,36 @@
 package Trei;
 
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Ignore;
+import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class WishlistTest {
+    private WebDriver driver;
 
-    public void addToWishlistSale() {
+    @Before
+    public void getWebDriver() {
         System.setProperty("webdriver.chrome.driver", "resources/chromedriver.exe");
-        WebDriver driver = new ChromeDriver();
+        driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.get("http://testfasttrackit.info/selenium-test/");
+    }
 
-        driver.findElement(By.cssSelector("#nav > ol > li.level0.nav-5.parent > a")).click();
-        driver.findElement(By.cssSelector("body > div > div.page > div.main-container.col3-layout > div > div.col-wrapper > div.col-main > div.category-products > ul > li > div > h2 > a")).click();
-        driver.findElement(By.cssSelector("body > div.wrapper"));
-        driver.findElement(By.cssSelector("#product_addtocart_form > div.product-shop > div.product-options-bottom > ul.add-to-links > li:nth-child(1) > a")).click();
-        driver.findElement(By.cssSelector("body > div > div.page > div.main-container.col1-layout > div > div > div.account-login > div > h1"));
+    @Test
+    public void addToWishlistSale() {
+        driver.findElement(By.cssSelector("#nav .nav-5")).click();
+        driver.findElement(By.cssSelector("[title='View Details']")).click();
+
+        driver.findElement(By.cssSelector("#swatch27")).click();
+        driver.findElement(By.cssSelector("#swatch81")).click();
+        driver.findElement(By.cssSelector(".product-options-bottom [title='Add to Cart']")).click();
+    }
+
+    @After
+    public void close() {
         driver.close();
     }
 }

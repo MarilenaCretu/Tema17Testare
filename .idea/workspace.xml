@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="4094fc44-6777-4393-9d25-1542685641f6" name="Changes" comment="Commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Trei/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Trei/LoginTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Trei/RegisterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Trei/RegisterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Trei/WishlistTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Trei/WishlistTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +48,7 @@
       <recent name="C:\Users\Marlenne\Desktop\Curs Testare\Testare 1\Curs17\Tema17Testare\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.RegisterTest">
+  <component name="RunManager" selected="JUnit.WishlistTest">
     <configuration name="LoginTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Tema17Testare" />
       <extension name="coverage">
@@ -75,21 +76,6 @@
       <option name="MAIN_CLASS_NAME" value="Trei.LoginTest" />
       <option name="METHOD_NAME" value="loginWithValidData" />
       <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Pozele" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Tema17Testare" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tema17.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tema17" />
-      <option name="MAIN_CLASS_NAME" value="Tema17.Pozele" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -123,13 +109,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="WishlistTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Tema17Testare" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Trei.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Trei" />
+      <option name="MAIN_CLASS_NAME" value="Trei.WishlistTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.WishlistTest" />
         <item itemvalue="JUnit.RegisterTest" />
         <item itemvalue="JUnit.LoginTest" />
         <item itemvalue="JUnit.LoginTest.loginWithValidData" />
         <item itemvalue="JUnit.Trei in Tema17Testare" />
-        <item itemvalue="JUnit.Pozele" />
       </list>
     </recent_temporary>
   </component>
@@ -170,7 +171,21 @@
       <option name="project" value="LOCAL" />
       <updated>1671285846363</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Commit">
+      <created>1671286407695</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1671286407695</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Commit">
+      <created>1671286714998</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1671286714998</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

@@ -7,7 +7,6 @@
     <list default="true" id="4094fc44-6777-4393-9d25-1542685641f6" name="Changes" comment="Commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Trei/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Trei/LoginTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Trei/RegisterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Trei/RegisterTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +47,7 @@
       <recent name="C:\Users\Marlenne\Desktop\Curs Testare\Testare 1\Curs17\Tema17Testare\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.RegisterTest">
+  <component name="RunManager" selected="JUnit.LoginTest">
     <configuration name="LoginTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Tema17Testare" />
       <extension name="coverage">
@@ -126,8 +125,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.RegisterTest" />
         <item itemvalue="JUnit.LoginTest" />
+        <item itemvalue="JUnit.RegisterTest" />
         <item itemvalue="JUnit.LoginTest.loginWithValidData" />
         <item itemvalue="JUnit.Trei in Tema17Testare" />
         <item itemvalue="JUnit.Pozele" />
@@ -164,7 +163,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671283628777</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Commit">
+      <created>1671285846363</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1671285846363</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -181,17 +187,6 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Commit" />
     <option name="LAST_COMMIT_MESSAGE" value="Commit" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/Trei/LoginTest.java</url>
-          <line>16</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Tema17Testare$Trei_in_Tema17Testare.ic" NAME="Trei in Tema17Testare Coverage Results" MODIFIED="1671282157017" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

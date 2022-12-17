@@ -25,13 +25,13 @@ public class LoginTest {
         driver.findElement(By.id("pass")).sendKeys("Emilia123");
         driver.findElement(By.id("send2")).click();
 
-        WebElement welcomeTextElement = driver.findElement(By.cssSelector("p.hello strong"));
+        WebElement welcomeTextElement = driver.findElement(By.cssSelector(".hello strong"));
         String expectedText = "Hello, Marilena Mari!";
         String actualText = welcomeTextElement.getText();
         Assert.assertEquals(expectedText,actualText);
 
-//        WebElement myAccount = driver.findElement(By.cssSelector("div.account-cart-wrapper span.label"));
-//        Assert.assertTrue(myAccount.isDisplayed());
+        WebElement myAccount = driver.findElement(By.cssSelector(".block-account span"));
+        Assert.assertTrue(myAccount.isDisplayed());
     }
 
     @After

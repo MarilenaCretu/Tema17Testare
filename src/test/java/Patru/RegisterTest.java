@@ -1,4 +1,4 @@
-package Trei;
+package Patru;
 
 import org.junit.After;
 import org.junit.Before;

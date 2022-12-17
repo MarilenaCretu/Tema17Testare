@@ -1,4 +1,4 @@
-package Trei;
+package Patru;
 
 import org.junit.*;
 import org.openqa.selenium.By;

@@ -29,7 +29,7 @@ public class RegisterTest {
         driver.findElement(By.cssSelector("#email_address")).sendKeys("marilena_c2001@yahoo.com");
         driver.findElement(By.cssSelector("#password")).sendKeys("Emilia123");
         driver.findElement(By.cssSelector("#confirmation")).sendKeys("Emilia123");
-        driver.findElement(By.cssSelector("div.buttons-set span span")).click();
+        driver.findElement(By.cssSelector("[title='Register'] span span")).click();
     }
     @After
     public void close() {

@@ -47,7 +47,7 @@
       <recent name="C:\Users\Marlenne\Desktop\Curs Testare\Testare 1\Curs17\Tema17Testare\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.LoginTest">
+  <component name="RunManager" selected="JUnit.RegisterTest">
     <configuration name="LoginTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Tema17Testare" />
       <extension name="coverage">
@@ -125,8 +125,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.LoginTest" />
         <item itemvalue="JUnit.RegisterTest" />
+        <item itemvalue="JUnit.LoginTest" />
         <item itemvalue="JUnit.LoginTest.loginWithValidData" />
         <item itemvalue="JUnit.Trei in Tema17Testare" />
         <item itemvalue="JUnit.Pozele" />

@@ -72,7 +72,7 @@ public class Pozele {
     }
 
 
-    @Ignore
+    @After
     public void close() {
         driver.close();
     }

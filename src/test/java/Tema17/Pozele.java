@@ -2,6 +2,7 @@ package Tema17;
 
 import org.junit.After;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -32,6 +33,7 @@ public class Pozele {
     public void addPozition() {
         driver.findElement(By.cssSelector("#nav .nav-5")).click();
         driver.findElement(By.cssSelector("[title='Sort By']")).click();
+
     }
 
     //poza 3
@@ -49,6 +51,7 @@ public class Pozele {
         driver.findElement(By.cssSelector("#swatch27 > span.swatch-label > img")).click();
         driver.findElement(By.cssSelector("#swatch81 > span.swatch-label")).click();
         driver.findElement(By.cssSelector(".add-to-cart [title='Add to Cart']")).click();
+        driver.findElement(By.cssSelector(".cart-totals-wrapper  [title='Proceed to Checkout']")).click();
     }
 
     //poza 4
@@ -69,7 +72,7 @@ public class Pozele {
     }
 
 
-    @After
+    @Ignore
     public void close() {
         driver.close();
     }

@@ -6,7 +6,6 @@ import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.Select;
 
 
 public class Pozele {
@@ -21,31 +20,54 @@ public class Pozele {
 
     }
 
-    @Test
     //poza 1
-    public void addToCart() {
+    @Test
+    public void search() {
+        driver.findElement(By.cssSelector("#search")).sendKeys("tale");
+        driver.findElement(By.cssSelector("[title='Search']")).click();
+    }
 
+    //poza 2
+    @Test
+    public void addPozition() {
+        driver.findElement(By.cssSelector("#nav .nav-5")).click();
+        driver.findElement(By.cssSelector("[title='Sort By']")).click();
+    }
 
-        driver.findElement(By.cssSelector("#nav > ol > li.level0.nav-5.parent > a")).click();
-        driver.findElement(By.cssSelector("body > div > div.page > div.main-container.col3-layout > div > div.col-wrapper > div.col-main > div.category-products > ul > li > div > h2 > a")).click();
-        driver.findElement(By.cssSelector("body > div.wrapper"));
+    //poza 3
+    @Test
+    public void addProduse() {
+        driver.findElement(By.cssSelector("#search")).sendKeys("vase");
+        driver.findElement(By.cssSelector("[title='Search']")).click();
+        driver.findElement(By.cssSelector("[title='View Details']")).click();
+        driver.findElement(By.cssSelector("#super_group_387")).clear();
+        driver.findElement(By.cssSelector("#super_group_387")).sendKeys("1");
+        driver.findElement(By.cssSelector(".add-to-box [title='Add to Cart']")).click();
+
+        driver.findElement(By.cssSelector("#nav .nav-5")).click();
+        driver.findElement(By.cssSelector("[title='View Details']")).click();
         driver.findElement(By.cssSelector("#swatch27 > span.swatch-label > img")).click();
         driver.findElement(By.cssSelector("#swatch81 > span.swatch-label")).click();
-        driver.findElement(By.cssSelector("#product_addtocart_form > div.product-shop > div.product-options-bottom > div.add-to-cart > div.add-to-cart-buttons > button > span > span")).click();
-        driver.findElement(By.cssSelector("#search_mini_form > div.input-box > button")).click();
-
+        driver.findElement(By.cssSelector(".add-to-cart [title='Add to Cart']")).click();
     }
-    @Test
+
     //poza 4
-    public void addPozition() {
-        // WebDriver driver = getWebDriver();
+    @Test
+    public void deleteProdus() {
+        driver.findElement(By.cssSelector("#nav .nav-5")).click();
+        driver.findElement(By.cssSelector("[title='View Details']")).click();
+        driver.findElement(By.cssSelector("#swatch27 > span.swatch-label > img")).click();
+        driver.findElement(By.cssSelector("#swatch81 > span.swatch-label")).click();
+        driver.findElement(By.cssSelector(".add-to-cart [title='Add to Cart']")).click();
 
-        driver.findElement(By.cssSelector("#nav > ol > li.level0.nav-5.parent > a")).click();
-        driver.findElement(By.cssSelector("body > div > div.page > div.main-container.col3-layout > div > div.col-wrapper > div.col-main > div.category-products > div.toolbar > div.sorter > div > select")).click();
-        Select mydrpdwn = (Select) new Select(driver.findElement(By.cssSelector("body > div > div.page > div.main-container.col3-layout > div > div.col-wrapper > div.col-main > div.category-products > div.toolbar > div.sorter > div > select"))).getOptions();
-//        String dropdown = driver.findElement(By.tagName("select")).getText();
-//        System.out.print("Drop down list values are as bellow :\n"+dropdown);
+        driver.findElement(By.cssSelector("#search")).sendKeys("tale");
+        driver.findElement(By.cssSelector("[title='Search']")).click();
+        driver.findElement(By.cssSelector("[title='View Details']")).click();
+        driver.findElement(By.cssSelector("#downloadable-links-list label")).click();
+        driver.findElement(By.cssSelector(".add-to-cart [title='Add to Cart']")).click();
+        driver.findElement(By.cssSelector("#shopping-cart-table .product-cart-remove")).click();
     }
+
 
     @After
     public void close() {
